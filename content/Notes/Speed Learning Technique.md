@@ -1,3 +1,6 @@
+---
+date: 2023-09-30
+---
 To learn things much faster, use the FAST method:
 
 F - Forget what you already know about the subject, and approach it like a complete beginner. Be completely absolved with the subject in front of you.

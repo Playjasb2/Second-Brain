@@ -1,3 +1,6 @@
+---
+date: 2023-09-30
+---
 Directional keys:
 h j k l - left, down, up, right
 

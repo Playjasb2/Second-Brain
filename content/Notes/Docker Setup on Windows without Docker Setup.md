@@ -1,3 +1,6 @@
+---
+date: 2023-09-30
+---
 [[Docker]]
 
 Setting up Docker on a Windows machine without using Docker Desktop requires a few more steps, mainly because Docker is natively a Linux technology. Here's a guide to setting up Docker on Windows without Docker Desktop:

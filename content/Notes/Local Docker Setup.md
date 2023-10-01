@@ -1,3 +1,6 @@
+---
+date: 2023-09-30
+---
 [[Docker]]
 
 When you're developing locally with Node.js or Next.js and plan to deploy your application using Docker, there's a typical flow you can follow to ensure a smooth transition from local development to production deployment. Let's break down the process:

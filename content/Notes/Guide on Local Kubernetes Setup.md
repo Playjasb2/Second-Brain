@@ -1,3 +1,6 @@
+---
+date: 2023-09-30
+---
 [[Kubernetes]] [[Docker]]
 
 Alright, diving into Kubernetes (often abbreviated as K8s) alongside Docker can be a game-changer for many developers, especially if you're looking to replicate a production-like environment locally. Here's a brief introduction and steps to get started with Kubernetes for local development:

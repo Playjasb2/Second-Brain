@@ -1,3 +1,6 @@
+---
+date: 2023-09-30
+---
 Control-B % - to create a new pane
 Control-B <directional keys> - to switch panes
 Control-B " - to create a new horizontal pane

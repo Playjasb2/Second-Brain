@@ -1,9 +1,8 @@
 ---
+date: 2023-09-30
 tags:
   - AI
 ---
-
-
 Game changing.
 
 Every since it came out, it basically straight up replaced googling for me.
