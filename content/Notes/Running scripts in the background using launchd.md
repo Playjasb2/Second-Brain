@@ -7,7 +7,7 @@ On macOS you can schedule scripts to run in the background using launchd. This d
 
 Sample script to get started:
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -27,17 +27,16 @@ Sample script to get started:
   <true/>
 </dict>
 </plist>
-
 ```
 
 Then assuming it's placed in `~/Library/LaunchAgents/`, you can load the job into launchd:
 
-```
+```zsh
 launchctl load ~/Library/LaunchAgents/com.yourname.quartzsync.plist
 ```
 
 To unload it, do:
 
-```
+```zsh
 launchctl unload ~/Library/LaunchAgents/com.yourname.quartzsync.plist
 ```
