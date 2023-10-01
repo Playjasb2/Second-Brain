@@ -1,6 +1,5 @@
 ---
-title: Welcome to Quartz
+title: Welcome to My Second Brain
 ---
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+Here you would find all my notes that I take so far.
