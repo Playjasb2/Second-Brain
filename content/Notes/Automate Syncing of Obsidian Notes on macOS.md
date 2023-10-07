@@ -39,12 +39,15 @@ export NVM_DIR="$HOME/.nvm"
 # Log file path
 log_file="/path/to/your/log_file.log"
 
+# Directory to watch
+quartz_dir="/path/to/quartz/folder/"
+
 # Initialize variables
 cooldown=300  # Cooldown period in seconds (5 minutes)
 last_sync=0  # Timestamp of the last sync
 
 # Watch the specified folder for changes
-fswatch -o /path/to/watched/folder | while read f; do
+fswatch -o "$quartz_dir"content | while read f; do
   current_time=$(date +%s)  # Get the current time in seconds since the Unix epoch
   
   # Check if enough time has passed since the last sync
