@@ -1,5 +1,7 @@
 ---
 date: 2023-10-07
+tags:
+  - webdev
 ---
 ### What is Nx?
 
