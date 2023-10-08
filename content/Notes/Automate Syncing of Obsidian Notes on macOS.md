@@ -1,5 +1,8 @@
 ---
 date: 2023-10-07
+tags:
+  - macOS
+  - automation
 ---
 This uses [[Running scripts in the background using launchd|launchd]] and [[fswatch]] to help with [[Self-Hosting Obsidian Notes]].
 

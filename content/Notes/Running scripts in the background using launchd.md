@@ -2,6 +2,7 @@
 date: 2023-10-01
 tags:
   - macOS
+  - automation
 ---
 On macOS you can schedule scripts to run in the background using launchd. This differs from cronjob in the sense that it could call the script when it resumes from sleep or a shutdown.
 
