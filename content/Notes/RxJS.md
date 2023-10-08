@@ -7,25 +7,31 @@ tags:
 
 RxJS (Reactive Extensions for JavaScript) is a library for reactive programming using observables that makes it easier to compose asynchronous or callback-based code.
 
-### Observables
+Creating an Observable
+```JavaScript
+import { Observable } from 'rxjs';
 
-The central component of RxJS is the Observable. An Observable represents a lazy push-based collection, either finite or infinite.
+const observable = new Observable(subscriber => {
+  subscriber.next(1);
+  subscriber.next(2);
+  subscriber.next(3);
+  subscriber.complete();
+});
 
-#### Creating an Observable
-
-
-```
-import { Observable } from 'rxjs';  const observable = new Observable(subscriber => {   subscriber.next(1);   subscriber.next(2);   subscriber.next(3);   subscriber.complete(); });
-```
 ```
 
 ### Subscribing to Observables
 
 You subscribe to an observable to execute it and catch the emitted values.
 
-javascriptCopy code
+```JavaScript
+observable.subscribe({
+  next(x) { console.log(`Got value ${x}`); },
+  error(err) { console.error(`Something went wrong ${err}`); },
+  complete() { console.log('Done'); }
+});
 
-``observable.subscribe({   next(x) { console.log(`Got value ${x}`); },   error(err) { console.error(`Something went wrong ${err}`); },   complete() { console.log('Done'); } });``
+```
 
 ### Operators
 
@@ -37,17 +43,35 @@ Operators are pure functions built to work with observables. They allow you to h
 2. `filter`: Filters out items based on a condition.
 3. `mergeMap` / `switchMap`: Handles merging of multiple observables.
 
-javascriptCopy code
+```JavaScript
+import { from } from 'rxjs';
+import { map } from 'rxjs/operators';
 
-`import { from } from 'rxjs'; import { map } from 'rxjs/operators';  const nums = from([1, 2, 3, 4, 5]); const squareNums = nums.pipe(map(n => n * n));`
+const nums = from([1, 2, 3, 4, 5]);
+const squareNums = nums.pipe(map(n => n * n));
+
+```
 
 ### Subjects
 
 A Subject is a special type of Observable that allows values to be multicast to many Observers.
 
-javascriptCopy code
+```
+import { Subject } from 'rxjs';
 
-``import { Subject } from 'rxjs';  const subject = new Subject();  subject.subscribe({   next: (value) => console.log(`A: ${value}`) });  subject.subscribe({   next: (value) => console.log(`B: ${value}`) });  subject.next(1);  // Logs "A: 1" and "B: 1"``
+const subject = new Subject();
+
+subject.subscribe({
+  next: (value) => console.log(`A: ${value}`)
+});
+
+subject.subscribe({
+  next: (value) => console.log(`B: ${value}`)
+});
+
+subject.next(1);  // Logs "A: 1" and "B: 1"
+
+```
 
 ## Advanced Topics
 
