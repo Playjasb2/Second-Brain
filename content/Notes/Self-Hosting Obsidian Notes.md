@@ -6,3 +6,5 @@ https://quartz.jzhao.xyz
 
 Hosting Option:
 https://pages.cloudflare.com
+
+This relates back to [[Obsidian]].
