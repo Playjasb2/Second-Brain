@@ -1,7 +1,6 @@
 ---
 date: 2023-10-03
 ---
-
 Obsidian is arguably one of the best apps I have ever used when it comes to productivity.
 
 It allows me to create a web of notes and freely lay them out as they are organically.
