@@ -18,3 +18,8 @@ date: 2023-10-08
 | `npm run <script>`                    | `yarn run <script>`                 | `pnpm run <script>` or `pnpm <script>`|
 | `npm list`                            | `yarn list`                         | `pnpm list`                         |
 | `npm audit`                           | `yarn audit`                        | `pnpm audit`                        |
+
+| npx Command               | pnpm Equivalent       | yarn Equivalent |
+|---------------------------|-----------------------|-----------------|
+| `npx <command>`           | `pnpm exec <command>` | `yarn dlx <command>` |
+| `npx create-react-app my-app` | `pnpm dlx create-react-app my-app` | Not Available in Yarn 1 |
