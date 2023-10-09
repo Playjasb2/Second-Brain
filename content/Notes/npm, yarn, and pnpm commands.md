@@ -1,5 +1,7 @@
 ---
 date: 2023-10-08
+tags:
+  - webdev
 ---
 | npm Command                           | yarn Equivalent                     | pnpm Equivalent                     |
 |---------------------------------------|-------------------------------------|-------------------------------------|
@@ -19,7 +21,8 @@ date: 2023-10-08
 | `npm list`                            | `yarn list`                         | `pnpm list`                         |
 | `npm audit`                           | `yarn audit`                        | `pnpm audit`                        |
 
-| npx Command               | pnpm Equivalent       | yarn Equivalent |
-|---------------------------|-----------------------|-----------------|
-| `npx <command>`           | `pnpm exec <command>` | `yarn dlx <command>` |
-| `npx create-react-app my-app` | `pnpm dlx create-react-app my-app` | Not Available in Yarn 1 |
+| npx Command               | yarn Equivalent       | pnpm Equivalent       |
+|---------------------------|-----------------------|-----------------------|
+| `npx <command>`           | `yarn dlx <command>` (Yarn 2) | `pnpm exec <command>` |
+| `npx create-react-app my-app` | `yarn dlx create-react-app my-app` (Yarn 2) | `pnpm dlx create-react-app my-app` |
+
