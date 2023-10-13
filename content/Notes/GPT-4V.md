@@ -5,4 +5,4 @@ tags:
 ---
 Article: https://openai.com/research/gpt-4v-system-card
 
-![[387638092_1010500410197466_6745538800785043764_n.png|inIR]]
+[[ChatGPT]] is now able to see what is in the image, and create prompts based on it, and it can also generate images using [[DALL·E 3]].
