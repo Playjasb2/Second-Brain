@@ -56,7 +56,7 @@ const squareNums = nums.pipe(map(n => n * n));
 
 A Subject is a special type of Observable that allows values to be multicast to many Observers.
 
-```
+```JavaScript
 import { Subject } from 'rxjs';
 
 const subject = new Subject();
