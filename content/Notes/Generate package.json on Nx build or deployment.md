@@ -3,6 +3,8 @@ date: 2023-10-21
 tags:
   - webdev
 ---
+Nx Docs: https://nx.dev/nx-cloud/recipes/other/ci-deployment
+
 If we want [[Nx]] to generate a package.json for each app for deployment, do the following:
 
 Do either:
